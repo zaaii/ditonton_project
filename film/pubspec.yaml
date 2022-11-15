@@ -1,0 +1,41 @@
+name: film
+description: A new Flutter package project.
+version: 0.0.1
+publish_to: 'none'
+homepage:
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  http: ^0.13.5
+  dartz: ^0.10.1-nullsafety.2
+  equatable: ^2.0.5
+  google_fonts: ^3.0.1
+  flutter_rating_bar: ^4.0.1
+  cached_network_image: ^3.2.2
+  get_it: ^7.2.0
+  sqflite: ^2.0.3+1
+  flutter_bloc: ^8.1.1
+  firebase_core: ^2.1.1
+  firebase_crashlytics: ^3.0.4
+
+  core:
+    path: ../core
+  tentang:
+    path: ../tentang
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  mockito: ^5.3.2
+  mocktail: ^0.3.0
+  build_runner: ^2.2.1
+  bloc_test: ^9.1.0
+
+flutter:

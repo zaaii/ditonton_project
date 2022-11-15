@@ -1,0 +1,89 @@
+{
+  "page":1,
+  "results":[
+    {
+      "backdrop_path":"/maFEWU41jdUOzDfRVkojq7fluIm.jpg",
+      "first_air_date":"1999-05-01",
+      "genre_ids":[
+        16,
+        35,
+        10751,
+        10765
+      ],
+      "id":387,
+      "name":"SpongeBob SquarePants",
+      "origin_country":[
+        "US"
+      ],
+      "original_language":"en",
+      "original_name":"SpongeBob SquarePants",
+      "overview":"Deep down in the Pacific Ocean in the subterranean city of Bikini Bottom lives a square yellow sponge named SpongeBob SquarePants. SpongeBob lives in a pineapple with his pet snail, Gary, loves his job as a fry cook at the Krusty Krab, and has a knack for getting into all kinds of trouble without really trying. When he's not getting on the nerves of his cranky next door neighbor Squidward, SpongeBob can usually be found smack in the middle of all sorts of strange situations with his best buddy, the simple yet lovable starfish, Patrick, or his thrill-seeking surfer-girl squirrel pal, Sandy Cheeks.",
+      "popularity":30.068,
+      "poster_path":"/amvtZgiTty0GHIgD56gpouBWrcy.jpg",
+      "vote_average":7.6,
+      "vote_count":2525
+    },
+    {
+      "backdrop_path":"/1qCGrhbbBLZpPY1NhyDjGymwq0X.jpg",
+      "first_air_date":"2021-03-04",
+      "genre_ids":[
+        16,
+        35,
+        10751
+      ],
+      "id":99588,
+      "name":"Kamp Koral: SpongeBob's Under Years",
+      "origin_country":[
+        "US"
+      ],
+      "original_language":"en",
+      "original_name":"Kamp Koral: SpongeBob's Under Years",
+      "overview":"SpongeBob and friends spend the summer catching jellyfish, building camp-fires, and swimming in Lake Yuckymuck at Camp Coral, located in the Kelp Forest.",
+      "popularity":22.465,
+      "poster_path":"/peZYB3aFOBoZbpFhOZogrTHVlqX.jpg",
+      "vote_average":7.2,
+      "vote_count":482
+    },
+    {
+      "backdrop_path":"/8t4otWl1x0KusphmrGFtyoRWrhW.jpg",
+      "first_air_date":"2020-05-14",
+      "genre_ids":[
+        10762,
+        99
+      ],
+      "id":121021,
+      "name":"SpongeBob DocuPants",
+      "origin_country":[
+        "US"
+      ],
+      "original_language":"en",
+      "original_name":"SpongeBob DocuPants",
+      "overview":"Imagine classic SpongeBob moments being told through the lens of documentary shows like E! True Hollywood Stories, Dateline, Behind the Music etc. Each episode takes an overly dramatic look into classic SpongeBob storylines.",
+      "popularity":1.017,
+      "poster_path":"/fxB8pHdIri8U1pcrEhIV4qh3Etv.jpg",
+      "vote_average":8.6,
+      "vote_count":9
+    },
+    {
+      "backdrop_path":null,
+      "first_air_date":"2020-05-14",
+      "genre_ids":[
+
+      ],
+      "id":205996,
+      "name":"SpongeBob As Told By",
+      "origin_country":[
+        "US"
+      ],
+      "original_language":"en",
+      "original_name":"SpongeBob As Told By",
+      "overview":"The cast of SpongeBob is asked to tell the story of iconic episodes as best as they can. SpongeBob cast members recount episodes and clips from the original show, and IRL Puppet reenactments embrace all of the nautical nonsense SpongeBob has to offer!",
+      "popularity":0.611,
+      "poster_path":"/ge8Vr33fiXgGBLZBGJJYjlFcW46.jpg",
+      "vote_average":0,
+      "vote_count":0
+    }
+  ],
+  "total_pages":1,
+  "total_results":4
+}

@@ -1,0 +1,57 @@
+{
+  "page":1,
+  "results":[
+    {
+      "adult":false,
+      "backdrop_path":"/noHOkAaTxDxQpKQci8kbDwlVe3N.jpg",
+      "id":4630,
+      "name":"The Fairly OddParents",
+      "original_language":"en",
+      "original_name":"The Fairly OddParents",
+      "overview":"The zany, fast-paced adventures of a 10-year-old boy and his fairy godparents, who inadvertently create havoc as they grant wishes for their pint-sized charge.",
+      "poster_path":"/3ryMj7tIvVtiXyI2tLvHYTjOjq4.jpg",
+      "media_type":"tv",
+      "genre_ids":[
+        16,
+        35,
+        10762,
+        10765
+      ],
+      "popularity":146.784,
+      "first_air_date":"2001-03-30",
+      "vote_average":7.636,
+      "vote_count":723,
+      "origin_country":[
+        "US",
+        "CA"
+      ]
+    },
+    {
+      "adult":false,
+      "backdrop_path":"/noHOkAaTxDxQpKQci8kbDwlVe3N.jpg",
+      "id":4630,
+      "name":"The Fairly OddParents",
+      "original_language":"en",
+      "original_name":"The Fairly OddParents",
+      "overview":"The zany, fast-paced adventures of a 10-year-old boy and his fairy godparents, who inadvertently create havoc as they grant wishes for their pint-sized charge.",
+      "poster_path":"/3ryMj7tIvVtiXyI2tLvHYTjOjq4.jpg",
+      "media_type":"tv",
+      "genre_ids":[
+        16,
+        35,
+        10762,
+        10765
+      ],
+      "popularity":146.784,
+      "first_air_date":"2001-03-30",
+      "vote_average":7.636,
+      "vote_count":723,
+      "origin_country":[
+        "US",
+        "CA"
+      ]
+    }
+  ],
+  "total_pages":2,
+  "total_results":40
+}
