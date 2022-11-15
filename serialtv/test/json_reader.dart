@@ -4,6 +4,8 @@ String readJson(String name) {
   var dir = Directory.current.path;
   if (dir.endsWith('/test')) {
     dir = dir.replaceAll('/test', '');
+  }  if (dir.endsWith('serialtv')) {
+    return File('$dir/test/$name').readAsStringSync();
   }
-  return File('$dir/test/$name').readAsStringSync();
+  return File('$dir/serialtv/test/$name').readAsStringSync();
 }
