@@ -86,7 +86,9 @@ class PencarianFilmResult extends StatelessWidget {
         return const Center(child: CircularProgressIndicator());
       } else if (state is SearchFilmHasData) {
         final result = state.filmresult;
-        return Expanded(
+        return Row( children: [
+        Expanded(
+          flex: 1,
           child: ListView.builder(
             padding: const EdgeInsets.all(8),
             itemBuilder: (context, index) {
@@ -95,22 +97,31 @@ class PencarianFilmResult extends StatelessWidget {
             },
             itemCount: result.length,
           ),
-        );
+        ),
+        ]);
       } else if (state is SearchFilmEmpty) {
-        return Expanded(
+        return Row( children: [
+          Expanded(
+          flex: 1,
           child: Center(
             child: Text("Belum ada hasil ", style: kSubtitle),
           ),
-        );
+        ),
+        ]);
       } else if (state is SearchFilmError) {
-        return Expanded(child: Center(
+        return Row(children: [
+          Expanded(flex: 1, child: Center(
           child: Text(state.message),
         ),
-        );
+        ),
+        ]);
       } else {
-        return Expanded(
-          child: Container(),
-        );
+        return Row( children: [
+          Expanded(
+            flex: 1,
+            child: Container(),
+          ),
+        ]);
       }
     },
     );
@@ -128,31 +139,42 @@ class PencarianSerialTvResult extends StatelessWidget {
         );
       } else if (state is SearchSerialTvHasData) {
         final result = state.serialtvresult;
-        return Expanded(
-          child: ListView.builder(
-            padding: const EdgeInsets.all(8),
-            itemBuilder: (context, index) {
-              final serialtv = result[index];
-              return SerialTvCard(serialtv);
+        return Row(
+            children:[
+              Expanded(
+                flex: 1,
+                child: ListView.builder(
+                  padding: const EdgeInsets.all(8),
+                  itemBuilder: (context, index) {
+                    final serialtv = result[index];
+                    return SerialTvCard(serialtv);
             },
             itemCount: result.length,
           ),
-        );
+        ),
+        ]);
       } else if (state is SearchSerialTvEmpty) {
-        return Expanded(
+        return Row( children:[Expanded(
+          flex: 1,
           child: Center(
             child: Text("Belum ada hasil", style: kSubtitle),
           ),
-        );
-      } else if (state is SearchSerialTvError) {
-        return Expanded(child: Center(
-          child: Text(state.message),
         ),
-        );
+        ]);
+      } else if (state is SearchSerialTvError) {
+        return Row( children:[
+          Expanded(
+            flex: 1,
+            child: Center(child: Text(state.message)),
+          ),
+        ]);
       } else {
-        return Expanded(
-          child: Container(),
-        );
+        return Row(children:[
+          Expanded(
+            flex: 1,
+            child: Container(),
+          ),
+        ]);
       }
     },
     );

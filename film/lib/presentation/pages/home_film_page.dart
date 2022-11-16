@@ -22,7 +22,7 @@ class _HomeFilmPageState extends State<HomeFilmPage> {
     Future.microtask(() {
       context.read<NowPlayingFilmBloc>().add(FetchNowPlayingFilm());
       context.read<FilmTopRatedBloc>().add(FetchFilmTopRated());
-      context.read()<FilmPopulerBloc>().add(FetchFilmPopuler());
+      context.read<FilmPopulerBloc>().add(FetchFilmPopuler());
     });
   }
 
