@@ -48,6 +48,8 @@ class _WatchlistFilmPageState extends State<WatchlistFilmPage> with RouteAware {
                 },
                 itemCount: state.result.length,
               );
+            } else if (state is WatchlistFilmEmpty) {
+              return Center(child: Text('Belum ada Watchlist Film', style: kSubtitle));
             } else if (state is WatchlistFilmError) {
               return Center(
                 key: Key('error_message'),

@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:core/core.dart';
+import 'package:serialtv/presentation/pages/nowplaying_serialtv_page.dart';
 import 'package:tentang/tentang.dart';
 
 
@@ -97,6 +98,8 @@ class MyApp extends StatelessWidget {
               return MaterialPageRoute(builder: (_) => WatchlistFilmPage());
 
               //SerialTv
+            case NowPlayingSerialTvPage.ROUTE_NAME:
+              return CupertinoPageRoute(builder: (_) => NowPlayingSerialTvPage());
             case SerialTvPopulerPage.ROUTE_NAME:
               return CupertinoPageRoute(builder: (_) => SerialTvPopulerPage());
             case SerialTvTopRatedPage.ROUTE_NAME:

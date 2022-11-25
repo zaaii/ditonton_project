@@ -38,26 +38,6 @@ class _HomePagesState extends State<HomePages> {
     ),
   ];
 
-  @override
-  void initState() {
-    super.initState();
-    Future.microtask(() {
-      BlocProvider.of<NowPlayingFilmBloc>(context, listen: false)
-          .add(FetchNowPlayingFilm());
-      BlocProvider.of<FilmTopRatedBloc>(context, listen: false)
-          .add(FetchFilmTopRated());
-      BlocProvider.of<FilmPopulerBloc>(context, listen: false)
-          .add(FetchFilmPopuler());
-    });
-    Future.microtask(() {
-      BlocProvider.of<NowPlayingSerialTvBloc>(context, listen: false)
-          .add(FetchNowPlayingSerialTv());
-      BlocProvider.of<SerialTvTopRatedBloc>(context, listen: false)
-          .add(FetchSerialTvTopRated());
-      BlocProvider.of<SerialTvPopulerBloc>(context, listen: false)
-          .add(FetchSerialTvPopuler());
-    });
-  }
 
   @override
   Widget build(BuildContext context) {

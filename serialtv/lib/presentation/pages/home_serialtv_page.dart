@@ -6,6 +6,7 @@ import 'package:serialtv/domain/entities/serialtv.dart';
 import 'package:serialtv/presentation/bloc/serialtv_nowplaying/serialtv_nowplaying_bloc.dart';
 import 'package:serialtv/presentation/bloc/serialtv_populer/serialtv_populer_bloc.dart';
 import 'package:serialtv/presentation/bloc/serialtv_toprated/serialtv_toprated_bloc.dart';
+import 'package:serialtv/presentation/pages/nowplaying_serialtv_page.dart';
 import 'package:serialtv/presentation/pages/populer_serialtv_page.dart';
 import 'package:serialtv/presentation/pages/toprated_serialtv_page.dart';
 import 'package:serialtv/presentation/pages/detail_serialtv_page.dart';
@@ -35,9 +36,10 @@ class _HomeSerialTvPageState extends State<HomeSerialTvPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                'Now Playing Serial Tv',
-                style: kHeading6,
+              _buildSubHeading(
+                title: 'Now Play Serial Tv',
+                onTap: () =>
+                    Navigator.pushNamed(context, NowPlayingSerialTvPage.ROUTE_NAME),
               ),
               BlocBuilder<NowPlayingSerialTvBloc, NowPlayingSerialTvState>(builder: (context, state) {
                 if (state is NowPlayingSerialTvLoading) {

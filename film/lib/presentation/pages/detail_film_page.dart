@@ -13,7 +13,7 @@ class DetailFilmPage extends StatefulWidget {
   static const ROUTE_NAME = '/detailfilm';
 
   final int id;
-  DetailFilmPage({Key? key, required this.id}) : super(key: key);
+  const DetailFilmPage({Key? key, required this.id}) : super(key: key);
 
   @override
   _DetailFilmPageState createState() => _DetailFilmPageState();
@@ -24,12 +24,9 @@ class _DetailFilmPageState extends State<DetailFilmPage> {
   void initState() {
     super.initState();
     Future.microtask(() {
-      BlocProvider.of<DetailFilmBloc>(context, listen: false)
-          .add(FetchDetailFilm(widget.id));
-      BlocProvider.of<WatchlistFilmBloc>(context, listen: false)
-          .add(LoadWatchListStatusFilm(widget.id));
-      BlocProvider.of<RecommendationsFilmBloc>(context, listen: false)
-          .add(FetchRecommendationsFilm(widget.id));
+      context.read<DetailFilmBloc>().add(FetchDetailFilm(widget.id));
+      context.read<WatchlistFilmBloc>().add(LoadWatchListStatusFilm(widget.id));
+      context.read<RecommendationsFilmBloc>().add(FetchRecommendationsFilm(widget.id));
     });
   }
 
@@ -41,9 +38,7 @@ class _DetailFilmPageState extends State<DetailFilmPage> {
             return Center(child: CircularProgressIndicator());
           } else if (state is DetailFilmHasData) {
             final movie = state.result;
-            return SafeArea(
-              child: DetailContent(movie)
-            );
+            return SafeArea(child: DetailContent(movie));
           } else if (state is DetailFilmEmpty) {
             return Center(child: Text("Detail Film Tidak Ada", style: kSubtitle,));
           } else if (state is DetailFilmError) {
