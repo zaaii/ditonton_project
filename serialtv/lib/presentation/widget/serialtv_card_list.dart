@@ -15,10 +15,7 @@ class SerialTvCard extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 4),
       child: InkWell(
         onTap: () {
-          Navigator.pushNamed(context,
-            DetailSerialTvPage.ROUTE_NAME,
-            arguments: serialtv.id,
-          );
+          Navigator.pushNamed(context, DetailSerialTvPage.ROUTE_NAME, arguments: serialtv.id,);
         },
         child: Stack(
           alignment: Alignment.bottomLeft,

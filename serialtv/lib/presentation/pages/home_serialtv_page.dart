@@ -30,14 +30,16 @@ class _HomeSerialTvPageState extends State<HomeSerialTvPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
         padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _buildSubHeading(
-                title: 'Now Play Serial Tv',
+                title: 'Now Playing Serial Tv',
                 onTap: () =>
                     Navigator.pushNamed(context, NowPlayingSerialTvPage.ROUTE_NAME),
               ),
@@ -110,8 +112,23 @@ class _HomeSerialTvPageState extends State<HomeSerialTvPage> {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
-              children: const [Text('Lihat Selengkapnya'), Icon(Icons.arrow_forward_ios)],
-            ),
+                children: [
+                  SizedBox(child:
+                  MediaQuery.of(context).size.width > 600 ? Row(
+                    children: [
+                      Icon(Icons.arrow_forward_ios, size: 10),
+                    ],
+                  ) : Row(
+                    children: [
+                      Text(
+                          'Lihat Semua',
+                          style:kSubtitle,
+                        ),
+                      Icon(Icons.arrow_forward_ios, size: 12),
+                    ],
+                  ),
+                  ),
+            ]),
           ),
         ),
       ],

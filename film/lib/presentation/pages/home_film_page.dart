@@ -106,8 +106,23 @@ class _HomeFilmPageState extends State<HomeFilmPage> {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
-              children: const [Text('Lihat Selengkapnya'), Icon(Icons.arrow_forward_ios)],
-            ),
+                children: [
+                  SizedBox(child:
+                  MediaQuery.of(context).size.width > 600 ? Row(
+                    children: [
+                      Icon(Icons.arrow_forward_ios, size: 10),
+                    ],
+                  ) : Row(
+                    children: [
+                      Text(
+                        'Lihat Semua',
+                        style:kSubtitle,
+                      ),
+                      Icon(Icons.arrow_forward_ios, size: 12),
+                    ],
+                  ),
+                  ),
+                ]),
           ),
         ),
       ],

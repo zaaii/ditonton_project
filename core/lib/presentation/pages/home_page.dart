@@ -1,19 +1,11 @@
-import 'package:firebase_crashlytics/firebase_crashlytics.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:tentang/tentang.dart';
 import 'package:core/styles/text_style.dart';
-import 'package:film/presentation/bloc/film_nowplaying/film_nowplaying_bloc.dart';
-import 'package:film/presentation/bloc/film_populer/film_populer_bloc.dart';
-import 'package:film/presentation/bloc/film_toprated/film_toprated_bloc.dart';
 import 'package:film/presentation/pages/home_film_page.dart';
 import 'package:film/presentation/pages/watchlist_film_page.dart';
+import 'package:flutter/material.dart';
 import 'package:pencarian/presentation/pages/pencarian_page.dart';
-import 'package:serialtv/presentation/bloc/serialtv_nowplaying/serialtv_nowplaying_bloc.dart';
-import 'package:serialtv/presentation/bloc/serialtv_populer/serialtv_populer_bloc.dart';
-import 'package:serialtv/presentation/bloc/serialtv_toprated/serialtv_toprated_bloc.dart';
 import 'package:serialtv/presentation/pages/home_serialtv_page.dart';
 import 'package:serialtv/presentation/pages/watchlist_serialtv_page.dart';
+import 'package:tentang/tentang.dart';
 
 class HomePages extends StatefulWidget {
   @override
